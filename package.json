@@ -1,0 +1,30 @@
+{
+  "name": "UNO",
+  "version": "1.0.0",
+  "description": "UNO Game ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rcgudey/UNO.git"
+  },
+  "keywords": [
+    "UNO",
+    "CDK",
+    "gudeyr"
+  ],
+  "author": [{
+    "name": "Rakesh C. Gudey",
+    "email": "rgudey@gmail.com"
+  },{
+    "name": "Gopi Perumalla",
+    "email": "rgudey@gmail.com"
+  }],
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/rcgudey/UNO/issues"
+  },
+  "homepage": "https://github.com/rcgudey/UNO"
+}
