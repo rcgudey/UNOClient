@@ -15,16 +15,25 @@
     "CDK",
     "gudeyr"
   ],
-  "author": [{
-    "name": "Rakesh C. Gudey",
-    "email": "rgudey@gmail.com"
-  },{
-    "name": "Gopi Perumalla",
-    "email": "rgudey@gmail.com"
-  }],
+  "author": [
+    {
+      "name": "Rakesh C. Gudey",
+      "email": "rgudey@gmail.com"
+    },
+    {
+      "name": "Gopi Perumalla",
+      "email": "rgudey@gmail.com"
+    }
+  ],
   "license": "GPL",
   "bugs": {
     "url": "https://github.com/rcgudey/UNO/issues"
   },
-  "homepage": "https://github.com/rcgudey/UNO"
+  "homepage": "https://github.com/rcgudey/UNO",
+  "dependencies": {
+    "angular": "^1.3.15",
+    "angular-ui-bootstrap": "^0.12.1",
+    "angular-ui-router": "^0.2.14",
+    "bootstrap": "^3.3.4"
+  }
 }
