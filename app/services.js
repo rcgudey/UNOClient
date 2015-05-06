@@ -13,9 +13,11 @@ services.factory("LoginService", function($rootScope){
 
     var LoginService = {
         isValidUser : function(user){
+            console.log(user);
             isValid = false, i = 0;
             while(!isValid){
                 if(i >= usersList.length) break;
+                console.log(usersList[i]);
                 if(user.email.match(usersList[i])){
                     isValid = true;
                     break;
@@ -26,5 +28,4 @@ services.factory("LoginService", function($rootScope){
         }
     }
     return LoginService;
-
 })

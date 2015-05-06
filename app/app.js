@@ -14,7 +14,15 @@ uno.config(function($stateProvider, $urlRouterProvider ){
         }).
         state("game",{
             url: "/game",
-            template: "<h3> Welcome to Game Page</h3>"
+            templateUrl: "partials/initGame.html",
+            controller: "GameController",
+            resolve : {
+                userState : function(){
+                    return {"canCreate": 0, "inGame":2, banned: 1, }
+                }
+            }
+
+
         });
 });
 

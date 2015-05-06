@@ -1,0 +1,26 @@
+<div class="text-center">
+    <h1>Welcome to Dashboard</h1>
+    <hr />
+    <h4 class="btn-link" ng-show="userState.canCreate" ng-click="startGame()">Start New Game</h4>
+    <h4 class="btn-link" ng-hide="userState.canCreate" ng-click="continueGame()">Continue Game</h4>
+    <hr />
+    <h5 class="text-left text-uppercase text-danger">Current Running Games</h5>
+    <table class='table'>
+        <thead>
+        <tr>
+            <td>Game ID</td>
+            <td>Started By</td>
+            <td>No. Of Players</td>
+            <td  ng-show="userState.canCreate">Actions</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat='game in gamelist'>
+            <td>{{game.id}}</td>
+            <td>{{game.startedBy}}</td>
+            <td>{{game.noOfPlayers}}</td>
+            <td><span ng-show="userState.canCreate" class='btn btn-success'>Join</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

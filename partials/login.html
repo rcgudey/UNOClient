@@ -1,7 +1,9 @@
 <div class="alert alert-danger"  ng-show="isErrored">{{errorMessage}}</div>
+<form ng-submit="doLogin(user)">
 <table class="table table-striped" width="250" >
     <tr>
         <td>Email: </td><td><input type="email" ng-model="user.email" ></td>
-        <td colspan="2"><button class="btn btn-success btn-sm" ng-click="joinGame(user)">Game on</button> </td>
+        <td colspan="2"><button class="btn btn-success btn-sm" type="submit">Login</button> </td>
     </tr>
 </table>
+</form>
